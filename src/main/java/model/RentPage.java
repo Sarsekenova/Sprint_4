@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 
 public class RentPage {
     private final WebDriver driver;
-
     private final By dateInput = By.xpath(".//input[@placeholder='* Когда привезти самокат']"); // Поле дата доставки
     private final By rentInput = By.cssSelector(".Dropdown-placeholder"); // Поле количество дней аренды
     private final By rentCountDays = By.xpath(".//div[@class='Dropdown-option' and text()='сутки']"); // Выбор количества дней аренды из списка
