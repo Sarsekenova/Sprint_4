@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import static model.MainPage.HOMEPAGE;
 
-public class InvalidOrderNumberTest {
+public class InvalidOrderNumberTest{
     private static final String DEFAULT_BROWSER_NAME = "CHROME"; // Установи значение для выбора браузера CHROME или FIREFOX
     private WebDriver driver;
 
