@@ -7,9 +7,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
 import static model.MainPage.HOMEPAGE;
 
 public class InvalidOrderNumberTest {
@@ -28,7 +26,6 @@ public class InvalidOrderNumberTest {
         mainPage.getOrderStatus("111");
         new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(mainPage.orderNotFound));
         Assert.assertTrue("Не отображается изображение 'Такого заказа нет'", mainPage.orderNotFound());
-
     }
 
     @After

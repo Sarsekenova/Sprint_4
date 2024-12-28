@@ -24,7 +24,6 @@ public class SamokatLogoTest {
         OrderList orderPage = new OrderList(driver);
         orderPage.clickSamokatLogo();
         Assert.assertEquals("Это не главная страница Самоката", HOMEPAGE, driver.getCurrentUrl());
-
     }
 
     @After
