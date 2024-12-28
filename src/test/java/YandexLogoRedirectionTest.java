@@ -6,9 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
 import static model.MainPage.HOMEPAGE;
 import static model.MainPage.YANDEX_HOMEPAGE;
 

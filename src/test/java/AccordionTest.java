@@ -8,7 +8,6 @@ import org.junit.runners.Parameterized;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import static model.MainPage.HOMEPAGE;
 import static org.junit.Assert.assertEquals;
 

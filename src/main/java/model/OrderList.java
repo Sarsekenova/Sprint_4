@@ -7,11 +7,9 @@ import org.openqa.selenium.WebElement;
 
 public class OrderList {
     private final WebDriver driver;
-
     private final By headOrderButton = By.xpath(".//div[@class='Header_Nav__AGCXC']/button[text()='Заказать']"); // Верхняя кнопка заказать
     private final By bottomOrderButton = By.xpath(".//button[text()='Заказать']/parent::div[@class='Home_FinishButton__1_cWm']"); // Нижняя кнопка заказать
     private final By samokatLogobutton = By.xpath(".//img[@alt='Scooter']"); // Логотип самокат в шапке сайта
-
     private final By nameField = By.cssSelector("input[placeholder='* Имя']"); // Поле имя
     private final By secondNameField = By.cssSelector("input[placeholder='* Фамилия']"); // Поле фамилия
     private final By addressField = By.cssSelector("input[placeholder='* Адрес: куда привезти заказ']"); // Поле адрес
@@ -76,7 +74,6 @@ public class OrderList {
         driver.findElement(samokatLogobutton).click();
     }
 
-
     //Метод для заполнения формы и перехода на следующий шаг
     public void fillOrderPage(String name, String secondName, String address, String phoneNumber, boolean isHead) {
         clickOrder(isHead); //Нажать на кнопку заказать
@@ -88,6 +85,4 @@ public class OrderList {
         setPhone(phoneNumber); // Заполнить поле Телефон
         nextStep(); // Нажать на кнопку Далее
     }
-
-
 }
